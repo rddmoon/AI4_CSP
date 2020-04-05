@@ -31,7 +31,7 @@ void Display(){
 	}
 }
  ```
- Fungsi Mark merupakan fungsi untuk melakukan forward checking, yaitu menandai semua baris, kolom, dan diagonal yang tidak aman jika kamu meletakkan ratu pada sel saat ini. Fungsi Mark menandai sel yang tidak aman dengan angka sesuai peletakan ratu pada tiap baris. Misalnya saat ini akan meletakkan ratu pada sel (2,3) maka fungsi Mark akan menandai sel tempat ratu diletakkan beserta semua sel yang tidak aman dengan angka '2'.
+ Fungsi Mark merupakan fungsi untuk melakukan forward checking, yaitu menandai semua baris, kolom, dan diagonal yang tidak aman jika kamu meletakkan ratu pada sel saat ini. Fungsi Mark menandai sel yang tidak aman dengan angka sesuai peletakan ratu pada tiap baris. Misalnya saat ini akan meletakkan ratu pada sel (2,3) maka fungsi Mark akan menandai sel tempat ratu diletakkan beserta semua sel yang tidak aman dengan angka '2'. Inilah mengapa pada fungsi Display menandai letak ratu jika nilai pada array sama dengan baris tempatnya berada, karena angka yang sama pada baris lain hanya menandai wilayah tidak aman bukan letak ratunya.
  ```
  void Mark(int row, int t, int initial, int mrow){
 	int i;
