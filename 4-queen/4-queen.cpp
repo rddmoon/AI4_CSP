@@ -18,10 +18,10 @@ void Display(){
 			//if row is the same with the mark then
 			//that's where the queen placed
 			if(board[i][j] == i){
-				printf(" 1 ");
+				printf("1 ");
 			}
 			else{
-				printf(" 0 ");
+				printf("0 ");
 			}
 		}
 		printf("\n");
@@ -82,6 +82,6 @@ void Solve(int row){
 }
 int main(){
 	//4-queen
-	board[5][5]={0};
+	board[4][4]={0};
 	Solve(1);
 }
